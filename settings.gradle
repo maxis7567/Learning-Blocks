@@ -1,0 +1,5 @@
+include ':ktoast-lib'
+include ':mstools'
+include ':msvolley'
+include ':app'
+rootProject.name = "Tavan"

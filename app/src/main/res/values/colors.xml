@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4FF0A</color>
+    <color name="colorPrimaryDark">#FFAF0A</color>
+    <color name="colorAccent">#0095BC</color>
+    <color name="colorAccent2">#F44360</color>
+
+
+    <color name="background">#FFFFFF</color>
+    <color name="textPrimary">#0095BC</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="textBlack">#262626</color>
+    <color name="BlogItemCreated">#c9c9c9c9</color>
+    <color name="imageButtonAccent">#FFFFFF</color>
+    <color name="textGrey">#6E6E6E</color>
+    <color name="textError">#F75E53</color>
+    <color name="textGreen">#05D480</color>
+    <color name="autoFillColor">#00FFFFFF</color>
+</resources>

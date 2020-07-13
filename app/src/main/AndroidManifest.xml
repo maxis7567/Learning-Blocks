@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nova.maxis7567.tavan">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".search.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SingleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".main.categories.CategoryDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".pricing.PricingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".main.categories.subcat.SubCatActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".main.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="tvn" />
+                <data android:host="tavanyaar.ir" />
+                <data android:pathPattern="/.*" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.RegisterUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".authentication.ActiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".authentication.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".blog.SingleBlogActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

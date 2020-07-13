@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RegisterView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".authentication.RegisterUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_login_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:translationY="-20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/tx_tavan_fa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/RulesAndPolicy"
+        android:textColor="@color/textBlack"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/RegisterAgreeBtn"
+        app:layout_constraintEnd_toStartOf="@+id/RegisterAgreeBtn"
+        app:layout_constraintStart_toEndOf="@+id/RegisterReadPolicyBtn"
+        app:layout_constraintTop_toTopOf="@+id/RegisterAgreeBtn" />
+
+    <LinearLayout
+        android:id="@+id/RegisterReadPolicyBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/RegisterlNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/textView4">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:rotation="180"
+            android:src="@drawable/ic_arrow_horizantal"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/Read"
+            android:textColor="@color/textPrimary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/RegisterAgreeBtn"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/RegisterAgreeBtn" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="@string/RegisterNewAccount"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/RegisterNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_editbox_background"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:importantForAutofill="no"
+
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/RegisterNameIc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/RegisterNameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/RegisterNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/RegisterNameEditText">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/name"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/RegisterlNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_editbox_background"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterNameEditText"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:id="@+id/RegisterlNameIc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/RegisterlNameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterlNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/RegisterlNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/RegisterlNameEditText">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/LastName"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/RegisterAgreeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterlNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterlNameEditText"
+        app:srcCompat="@drawable/shape_circle_input_background" />
+
+    <ImageView
+        android:id="@+id/RegisterAgreeIc"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/RegisterAgreeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterAgreeBtn"
+        app:layout_constraintStart_toStartOf="@+id/RegisterAgreeBtn"
+        app:layout_constraintTop_toTopOf="@+id/RegisterAgreeBtn"
+        app:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/RegisterBtn"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_button_background"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/textWhite"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterlNameEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/RegisterlNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/RegisterErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/textError"
+        android:visibility="gone"
+        android:fontFamily="@font/medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

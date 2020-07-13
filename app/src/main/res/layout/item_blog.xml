@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:background="@android:color/transparent"
+    android:paddingEnd="16dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ItemBlogImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/template_blog"
+        app:riv_corner_radius_top_left="18dp"
+        app:riv_corner_radius_top_right="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ItemBlogDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:text="3 روز پیش"
+            android:textColor="@color/BlogItemCreated"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ItemBlogTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:fontFamily="@font/bold"
+            android:gravity="center|start"
+            android:maxLines="2"
+            android:text="@string/LoremTitle"
+            android:textColor="@color/textBlack"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

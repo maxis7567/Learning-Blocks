@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.nova.maxis7567.tavan.pricing.PriceCardLinearLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/MarketMainFragItem"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shadow_price_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/PriceCardPackageName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_price_card_title"
+                android:gravity="center"
+                android:padding="16sp"
+                android:text="TextView"
+                android:textColor="@color/textWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/PriceCardPackageDesc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:lineSpacingExtra="18sp"
+                android:textColor="@color/textBlack"
+                app:layout_constraintBottom_toTopOf="@+id/PriceCardPackageDiscountedPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PriceCardPackageName" />
+
+            <TextView
+                android:id="@+id/PricingCardTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="TextView"
+                android:textColor="@color/colorAccent2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/PriceCardPackagePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/bold"
+                android:text="TextView"
+                android:textColor="@color/colorAccent2"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/PricingCardTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/PriceCardPackageDiscountedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="@font/bold"
+                android:text="TextView"
+                android:textColor="@color/textGrey"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/PricingCardTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/PricCardDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_price_card_discount"
+                android:fontFamily="@font/medium"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:rotation="-10"
+                android:text="20%"
+                android:textColor="@color/textWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/PriceCardPackageName"
+                app:layout_constraintEnd_toEndOf="@+id/PriceCardPackageName"
+                app:layout_constraintStart_toStartOf="@+id/PriceCardPackageName"
+                app:layout_constraintTop_toBottomOf="@+id/PriceCardPackageName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.nova.maxis7567.tavan.pricing.PriceCardLinearLayout>
+</LinearLayout>

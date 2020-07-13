@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation "net.gotev:uploadservice:3.5.2"
+    implementation "net.gotev:uploadservice-okhttp:3.3"
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation project(path: ':mstools')
+    implementation project(path: ':ktoast-lib')
+    implementation 'androidx.core:core:1.5.0-alpha01'
+
+}
