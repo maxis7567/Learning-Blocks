@@ -20,7 +20,7 @@
         android:id="@+id/ItemCategoryCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/shape_activities_counter_background"
         android:fontFamily="@font/bold"
@@ -33,7 +33,7 @@
         android:textSize="26sp"
         android:translationY="-5dp"
         app:layout_constraintBottom_toBottomOf="@+id/ItemCategoryImage"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/ItemCategoryTitle"

@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:text="ایده هایی برای توانبخشی"
+        android:text="Activities for children with special needs"
         android:textColor="@color/textPrimary"
         android:textSize="16sp"
         android:translationY="-42dp"
@@ -105,17 +105,6 @@
         app:layout_constraintEnd_toEndOf="@+id/LoginInput"
         app:layout_constraintStart_toStartOf="@+id/LoginInput"
         app:layout_constraintTop_toTopOf="@+id/LoginInput">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:fontFamily="@font/regular"
-            android:text="شماره تلفن همراه"
-            android:textColor="@color/textBlack"
-            android:textSize="18sp" />
-
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="24dp"
@@ -123,6 +112,17 @@
             android:adjustViewBounds="true"
             android:tint="@color/textBlack"
             app:srcCompat="@drawable/ic_mobile" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/regular"
+            android:text="Phone Number"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

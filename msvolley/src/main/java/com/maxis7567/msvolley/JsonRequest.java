@@ -164,7 +164,7 @@ public class JsonRequest<T, E> extends Request<T> {
                     ((Activity) context).runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            KToast.errorToast(((Activity) context), "مشکلی در احراز هویت شما وجود دارد لطفا دوباره وارد شوید", Gravity.BOTTOM, KToast.LENGTH_AUTO, 1);
+                            KToast.errorToast(((Activity) context), "There is a problem with your authentication. Please log in again.", Gravity.BOTTOM, KToast.LENGTH_AUTO, 1);
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {

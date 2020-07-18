@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.nova.maxis7567.tavan.pricing.PriceCardLinearLayout
+    <com.nova.maxis7567.learningblocks.pricing.PriceCardLinearLayout
         android:id="@+id/item_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -112,5 +112,5 @@
 
 
 
-    </com.nova.maxis7567.tavan.pricing.PriceCardLinearLayout>
+    </com.nova.maxis7567.learningblocks.pricing.PriceCardLinearLayout>
 </LinearLayout>

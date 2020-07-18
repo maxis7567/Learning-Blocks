@@ -41,9 +41,9 @@ public class SubCatViewPager extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (list.get(position).get(0) instanceof Activity) {
-            return "فعالیت ها" + "(" + list.get(position).size() + ")";
+            return "Activities" + "(" + list.get(position).size() + ")";
         } else {
-            return "دسته ها";
+            return "Categories";
         }
     }
 

@@ -51,15 +51,13 @@ public class ActiveActivity extends AppCompatActivity {
         errorText=findViewById(R.id.ActiveErrorTExt);
         loading=new LoadingDialog(this,viewGroup);
         SpannableStringBuilder builder = new SpannableStringBuilder();
-        String str1="کد فعال سازی\n";
-        String str2="به شماره ";
+        String str1="Activation code\n";
+        String str2="Send to ";
         SpannableString str3=new SpannableString(getIntent().getStringExtra("phone")+" ");
         str3.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.colorAccent)), 0, str3.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        String str4="ارسال شد";
         builder.append(str1);
         builder.append(str2);
         builder.append(str3);
-        builder.append(str4);
         ((TextView) findViewById(R.id.ActiveNumber)).setText(builder);
         findViewById(R.id.ActiveSendCode).setOnClickListener(new View.OnClickListener() {
             @Override

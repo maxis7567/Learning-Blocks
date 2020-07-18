@@ -67,7 +67,7 @@ public class RecentActivityAdapter extends RecyclerView.Adapter<RecentActivityAd
             SpannableStringBuilder date = new SpannableStringBuilder();
             SpannableString dateNumber = new SpannableString(PostTimeCal.Calculator((new Date().getTime()-item.getLastViewedIn().getTime()) / 1000).replaceAll("[^-?0-9]+", "") + "\n");
             dateNumber.setSpan(new RelativeSizeSpan(1.8f), 0, dateNumber.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            date.append(dateNumber).append(PostTimeCal.Calculator((new Date().getTime()-item.getLastViewedIn().getTime()) / 1000).replaceAll("\\d", "") + " پیش");
+            date.append(dateNumber).append(PostTimeCal.Calculator((new Date().getTime()-item.getLastViewedIn().getTime()) / 1000).replaceAll("\\d", "") +" "+ context.getString(R.string.ago));
             this.date.setText(date);
             title.setText(item.getName());
             desc.setText(item.getDescription());

@@ -214,7 +214,7 @@ public class SingleBlogActivity extends AppCompatActivity {
         web.select("h3").attr("style", "font-family:MyFont");
         RecyclerView recyclerView=findViewById(R.id.BlogRec);
         recyclerView.setAdapter(new TagAdapter(this,respond.getCategoryList()));
-        recyclerView.setLayoutManager(new RtlGridLayoutManager(this,1,RecyclerView.HORIZONTAL,false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         content.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -255,7 +255,7 @@ public class SingleBlogActivity extends AppCompatActivity {
                 "<style type=\"text/css\">\n" +
                         "@font-face {\n" +
                         "    font-family: MyFont;\n" +
-                        "    src: url(\"file:///android_asset/font/regular.TTF\")\n" +
+                        "    src: url(\"file:///android_asset/font/regular.ttf\")\n" +
                         "}\n" +
                         "body {\n" +
                         "    font-family: MyFont;\n" +

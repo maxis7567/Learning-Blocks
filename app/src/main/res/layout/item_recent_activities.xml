@@ -16,22 +16,21 @@
         android:layout_height="70dp"
         android:background="@drawable/shape_recent_activities_time"
         android:fontFamily="@font/medium"
-        android:gravity="center|top"
+        android:gravity="center"
         android:padding="8dp"
         android:text="TextView"
         android:textColor="@color/textPrimary"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:rotation="180"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arrow_horizantal" />
 
@@ -40,17 +39,17 @@
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/ItemRecentActDate"
-        app:layout_constraintEnd_toStartOf="@+id/ItemRecentActDate"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/ItemRecentActDate"
         app:layout_constraintTop_toTopOf="@+id/ItemRecentActDate">
 
         <TextView
             android:id="@+id/ItemRecentActTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:fontFamily="@font/medium"
             android:text="@string/LoremTitle"
             android:textColor="@color/textPrimary"

@@ -25,42 +25,41 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/shape_oval_bgprimary"
         android:fontFamily="@font/bold"
         android:gravity="center"
         android:text="1"
         android:textColor="@color/textWhite"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ItemStepTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/medium"
         android:gravity="right"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/ItemStepNumber"
-        app:layout_constraintEnd_toStartOf="@+id/ItemStepNumber"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ItemStepNumber"
         app:layout_constraintTop_toTopOf="@+id/ItemStepNumber" />
 
     <TextView
         android:id="@+id/ItemStepContent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:fontFamily="@font/light"
         android:gravity="right"
         android:text="TextView"
         android:textColor="@color/textGrey"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/ItemStepNumber"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ItemStepTitle"
+        app:layout_constraintStart_toStartOf="@+id/ItemStepTitle"
         app:layout_constraintTop_toBottomOf="@+id/ItemStepTitle" />
 
     <LinearLayout
@@ -119,9 +118,9 @@
             android:id="@+id/imageView5"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_download" />
 
@@ -129,13 +128,13 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
             android:fontFamily="@font/regular"
-            android:text="دانلود فایل مربوطه"
+            android:text="Download the file"
             android:textColor="@color/textBlack"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
         <TextView
@@ -144,7 +143,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="@color/textBlack"
-            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

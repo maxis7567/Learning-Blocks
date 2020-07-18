@@ -94,14 +94,14 @@ public class DashboardFragment extends Fragment {
         view.findViewById(R.id.DashboordUserBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog a=   new AlertDialog.Builder(context).setMessage("مایل به خروج از حساب کاربری خود هستید؟").setCancelable(true)
+                AlertDialog a=   new AlertDialog.Builder(context).setMessage(R.string.LogOutConfirmation).setCancelable(true)
                         .setOnCancelListener(new DialogInterface.OnCancelListener() {
                             @Override
                             public void onCancel(DialogInterface dialog) {
                                 dialog.dismiss();
                             }
                         })
-                        .setPositiveButton("بله", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 DataBaseTokenID.ResetTokenID(context);
@@ -111,7 +111,7 @@ public class DashboardFragment extends Fragment {
                                 activity.finish();
                             }
                         })
-                        .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("no", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
@@ -250,12 +250,12 @@ public class DashboardFragment extends Fragment {
             premiumDesc.setText(context.getString(R.string.theTime)+days+context.getString(R.string.remainder));
         }else {
             SpannableStringBuilder builder = new SpannableStringBuilder();
-            SpannableString str1 = new SpannableString("خرید ");
+            SpannableString str1 = new SpannableString("Upgrade To ");
             Typeface font = Typeface.createFromAsset(context.getAssets(), "font/bold.TTF");
             str1.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.textBlack)), 0, str1.length(), 0);
             str1.setSpan (font, 0, str1.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
             builder.append(str1);
-            SpannableString str2 = new SpannableString("اشتراک ویژه");
+            SpannableString str2 = new SpannableString("Premium");
             str2.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.colorPrimaryDark)), 0, str2.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             str2.setSpan (font, 0, str2.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
             builder.append(str2);

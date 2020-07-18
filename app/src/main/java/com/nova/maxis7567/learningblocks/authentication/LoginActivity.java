@@ -30,15 +30,15 @@ public class LoginActivity extends AppCompatActivity {
                 if (hasFocus){
                     View view= findViewById(R.id.LoginAnime);
                     ObjectAnimator anim = ObjectAnimator.ofFloat(view, "translationY", 0f, new DisplayMetricsUtils(LoginActivity.this).convertDIPToPixels(27));
-                    anim.setDuration(1100).start();
-                    view.animate().scaleY((float) 0.7).setDuration(1100).start();
-                    view.animate().scaleX((float) 0.7).setDuration(1100).start();
+                    anim.setDuration(500).start();
+                    view.animate().scaleY((float) 0.7).setDuration(500).start();
+                    view.animate().scaleX((float) 0.7).setDuration(500).start();
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             editText.setHint(R.string.phoneNumberHint);
                         }
-                    },1100);
+                    },500);
                 }
             }
         });
@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                     intent.putExtra("phone",tmp);
                     startActivity(intent);
                 }else {
-                    ((TextView) findViewById(R.id.LoginErrorText)).setText("شماره نا درست است");
+                    ((TextView) findViewById(R.id.LoginErrorText)).setText(R.string.invalidNumber);
                     ((TextView) findViewById(R.id.LoginErrorText)).setVisibility(View.VISIBLE);
                 }
             }

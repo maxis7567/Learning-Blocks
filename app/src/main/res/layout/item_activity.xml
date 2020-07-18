@@ -21,32 +21,32 @@
         android:id="@+id/ItemActivityTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:fontFamily="@font/medium"
-        tools:text="TextView"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ItemActivityImage" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItemActivityImage"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/ItemActivityDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
+        android:ellipsize="end"
         android:fontFamily="@font/light"
-        tools:text="TextView"
+        android:maxLines="2"
         android:textColor="@color/textGrey"
         android:textSize="16sp"
-        android:maxLines="2"
-        android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ItemActivityTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/ItemActivityTitle"
+        tools:text="TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

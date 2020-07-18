@@ -47,11 +47,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (list.get(position).get(0) instanceof Blog){
-            return "وبلاگ ها"+"("+list.get(position).size()+")";
+            return "Blog"+"("+list.get(position).size()+")";
         }else if (list.get(position).get(0) instanceof Activity){
-            return "فعالیت ها"+"("+list.get(position).size()+")";
+            return "Activities"+"("+list.get(position).size()+")";
         }else {
-            return "دسته ها"+"("+list.get(position).size()+")";
+            return "Categories"+"("+list.get(position).size()+")";
         }
     }
 }

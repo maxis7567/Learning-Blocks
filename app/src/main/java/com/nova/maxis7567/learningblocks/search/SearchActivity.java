@@ -53,11 +53,11 @@ public class SearchActivity extends AppCompatActivity {
         title = findViewById(R.id.SearchTitle);
         q = findViewById(R.id.SearchEditbox);
         if (getIntent().getBooleanExtra("activity", false)) {
-            title.setText("جستجو در فعالیت ها");
-            q.setHint("نام فعالیت مورد نظرتان را بنویسید");
+            title.setText(R.string.ActivitiesSearchTitle);
+            q.setHint(R.string.ActivitiesSearchHint);
         } else {
-            title.setText("جستجو در دسته ها");
-            q.setHint("نام دسته مورد نظرتان را بنویسید");
+            title.setText(R.string.CategoriesSearchTitle);
+            q.setHint(R.string.CategoriesSearchHint);
         }
 
         recyclerView = findViewById(R.id.SearchRec);

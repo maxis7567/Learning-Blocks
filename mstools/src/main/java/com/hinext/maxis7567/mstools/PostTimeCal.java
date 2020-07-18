@@ -4,19 +4,19 @@ public class PostTimeCal {
 
     public static String Calculator(long unix){
         if (unix<60){
-            return (unix +" ثانیه");
+            return (unix +" second");
         }else if(unix < 3600){
-            return (unix / 60 +" دقیقه");
+            return (unix / 60 +"minute");
         }else if(unix < 86400){
-            return (unix / 3600 +" ساعت");
+            return (unix / 3600 +"hour");
         }else if(unix < 604800){
-            return (unix / 86400 +" روز");
+            return (unix / 86400 +"days");
         }else if (unix < 2592000){
-            return (unix / 604800 +" هفته");
+            return (unix / 604800 +"weak");
         }else if (unix < 31104000){
-            return (unix / 2592000 +" ماه");
+            return (unix / 2592000 +"month");
         }else {
-            return (unix / 31104000 +" سال");
+            return (unix / 31104000 +"year");
         }
     }
 }

@@ -77,8 +77,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/bold"
-                android:gravity="right"
-                android:text="فعالیت ها"
+                android:text="Activities"
                 android:textColor="@color/textBlack"
                 android:textSize="18sp" />
 
@@ -120,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/SingleActivityBackBtn"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_bookmark_o" />
 
@@ -128,8 +127,9 @@
             android:id="@+id/SingleActivityTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="64dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/medium"
             android:text="TextView"
@@ -137,6 +137,7 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

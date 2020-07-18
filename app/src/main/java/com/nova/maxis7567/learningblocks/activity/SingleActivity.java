@@ -18,7 +18,6 @@ import com.maxis7567.msvolley.RespondError;
 import com.maxis7567.msvolley.Response;
 import com.maxis7567.msvolley.ResponseError;
 import com.nova.maxis7567.learningblocks.R;
-import com.nova.maxis7567.learningblocks.SplashActivity;
 import com.nova.maxis7567.learningblocks.globaladapters.TagAdapter;
 import com.nova.maxis7567.learningblocks.models.Activity;
 import com.nova.maxis7567.learningblocks.pricing.PricingActivity;
@@ -155,9 +154,9 @@ public class SingleActivity extends AppCompatActivity {
                                     onBackPressed();
                                 }
                             });
-                            dialogMessage.title.setText(R.string.forbidenAccess);
+                            dialogMessage.title.setText(R.string.forbiddenAccess);
                             dialogMessage.title.setTextColor(getResources().getColor(R.color.textBlack));
-                            dialogMessage.description.setText(R.string.ActivityForbidenAccess);
+                            dialogMessage.description.setText(R.string.ActivityForbiddenAccess);
                             dialogMessage.success.setText(R.string.buyPremium);
                             dialogMessage.cancel.setText(R.string.cancel);
                             dialogMessage.setCancelable(false);
@@ -201,7 +200,7 @@ public class SingleActivity extends AppCompatActivity {
         });
         Picasso.load(data.getImage(),image,R.drawable.image_holder_spinner);
         tagRec.setAdapter(new TagAdapter(this,data.getTagList()));
-        tagRec.setLayoutManager(new RtlGridLayoutManager(this,1,RecyclerView.HORIZONTAL,false));
+        tagRec.setLayoutManager(new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false));
         stepRec.setAdapter(new TrainAdapter(this,data.getStepList()));
         stepRec.setLayoutManager(new LinearLayoutManager(this));
         bookmarkHandler(data.isBookmark());

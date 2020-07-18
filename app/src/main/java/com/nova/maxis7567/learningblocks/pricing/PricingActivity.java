@@ -275,7 +275,7 @@ public class PricingActivity extends AppCompatActivity {
     }
 
     public void setTotals(int price, String name) {
-        totalPrice.setText(PriceConvertor.Convert(price) + " تومان");
+        totalPrice.setText(PriceConvertor.Convert(price)+" " + getString(R.string.MoneyUnit));
         totalName.setText(name);
     }
 }

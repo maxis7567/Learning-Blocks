@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         app:riv_corner_radius="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:adjustViewBounds="true"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ic_crown" />
 
@@ -23,13 +23,13 @@
         android:id="@+id/ItemTipTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/bold"
         android:text="TextView"
         android:textColor="@color/colorAccent2"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/ItemTipImage"
-        app:layout_constraintEnd_toStartOf="@+id/ItemTipImage"
+        app:layout_constraintStart_toEndOf="@+id/ItemTipImage"
         app:layout_constraintTop_toTopOf="@+id/ItemTipImage" />
 
     <TextView

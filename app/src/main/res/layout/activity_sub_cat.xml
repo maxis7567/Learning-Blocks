@@ -66,7 +66,6 @@
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:layout_marginStart="8dp"
-                            android:scaleType="center"
                             app:layout_constraintBottom_toBottomOf="@+id/SubCatBookMark"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="@+id/SubCatBookMark"
@@ -88,23 +87,24 @@
                                 android:id="@+id/SubCatReadMore"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
                                 android:paddingBottom="40dp"
-                                android:text="بیشتر بخوانید"
+                                android:text="Read More"
                                 android:textColor="@color/colorAccent"
-                                app:layout_constraintEnd_toEndOf="@+id/SubCatDesc"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/SubCatDesc" />
 
                             <TextView
                                 android:id="@+id/SubCatTitle"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
                                 android:layout_marginTop="50dp"
-                                android:layout_marginEnd="16dp"
                                 android:fontFamily="@font/bold"
                                 android:text="توضیحات موسیقی"
                                 android:textColor="#FFFFFF"
                                 android:textSize="18sp"
-                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
@@ -132,7 +132,7 @@
                             android:id="@+id/SubCatCounter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
                             android:background="@drawable/shape_activities_counter_background"
                             android:fontFamily="@font/bold"
                             android:gravity="center"
@@ -144,7 +144,7 @@
                             android:textSize="26sp"
                             android:translationY="-12dp"
                             app:layout_constraintBottom_toBottomOf="@+id/SubCatImage"
-                            app:layout_constraintStart_toStartOf="parent" />
+                            app:layout_constraintEnd_toEndOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </com.google.android.material.appbar.CollapsingToolbarLayout>

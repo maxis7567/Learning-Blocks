@@ -76,22 +76,10 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/BlogTime"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/medium"
-                    android:gravity="center"
-                    android:text="3 روز پیش"
-                    android:layout_marginLeft="8dp"
-                    android:textColor="@color/BlogItemCreated"
-                    android:textSize="16sp" />
-
-                <TextView
                     android:id="@+id/BlogTitle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_weight="3"
                     android:ellipsize="end"
                     android:fontFamily="@font/bold"
@@ -100,6 +88,18 @@
                     android:text="@string/LoremTitle"
                     android:textColor="@color/textBlack"
                     android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/BlogTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center"
+                    android:text="3 روز پیش"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/BlogItemCreated"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>

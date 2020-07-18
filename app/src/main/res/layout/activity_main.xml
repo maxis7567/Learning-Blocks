@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
-                    android:text="دسته ها"
+                    android:text="Category"
                     android:textSize="12dp" />
             </LinearLayout>
 
@@ -104,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
-                    android:text="ذخیره ها"
+                    android:text="Bookmark"
                     android:textSize="12dp" />
             </LinearLayout>
 
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
-                    android:text="وبلاگ"
+                    android:text="Blog"
                     android:textSize="12dp" />
             </LinearLayout>
         </LinearLayout>

@@ -41,10 +41,10 @@
                         android:id="@+id/SearchTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="16dp"
                         android:src="@drawable/tx_tavan_fa"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
@@ -63,11 +63,11 @@
                         android:id="@+id/DashboardBookMark"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
                         android:adjustViewBounds="true"
                         android:src="@drawable/ic_bookmark_o"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -160,29 +160,30 @@
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/ic_crown" />
 
                         <LinearLayout
+                            android:id="@+id/linearLayout2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
-                            android:gravity="right|center"
+                            android:gravity="left|center"
                             android:orientation="vertical"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/imageView12"
-                            app:layout_constraintStart_toEndOf="@+id/imageView13"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                            app:layout_constraintStart_toEndOf="@+id/imageView12"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
                                 android:id="@+id/DahsboardPremiumTitle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="2dp"
                                 android:fontFamily="@font/bold"
-                                android:text="خرید اشتراک ویژه"
+                                android:text="@string/UpgradeToPremium"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:textSize="18dp" />
 
@@ -199,10 +200,9 @@
                             android:id="@+id/imageView13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:rotation="180"
                             android:tint="@color/colorPrimaryDark"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/ic_arrow_horizantal" />
 
@@ -233,20 +233,20 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
-
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/ic_search" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:fontFamily="@font/medium"
                                 android:text="@string/SearchActivities"
                                 android:textColor="@color/textBlack"
                                 android:textSize="18dp" />
 
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                app:srcCompat="@drawable/ic_search" />
+
 
 
                         </LinearLayout>
@@ -257,7 +257,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="32dp"
-                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="left"
                         android:layout_marginBottom="32dp"
                         android:fontFamily="@font/bold"
                         android:text="@string/RecentActivities"
@@ -273,10 +274,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="32dp"
-                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
                         android:layout_marginBottom="32dp"
                         android:fontFamily="@font/bold"
                         android:text="@string/NewInBlog"
+                        android:layout_gravity="left"
                         android:textColor="@color/textBlack"
                         android:textSize="18sp" />
 

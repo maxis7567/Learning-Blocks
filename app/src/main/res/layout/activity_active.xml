@@ -30,7 +30,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/medium"
         android:gravity="center"
-        android:text="کد فعال سازی
+        tools:text="کد فعال سازی
 به شماره 0912456789 ارسال شد"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

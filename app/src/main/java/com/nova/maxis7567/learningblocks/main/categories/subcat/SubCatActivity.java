@@ -99,7 +99,7 @@ public class SubCatActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.SubCatCounter)).setText(String.valueOf(category.getCounter()));
         TextView title=findViewById(R.id.SubCatTitle);
         SpannableStringBuilder builder = new SpannableStringBuilder();
-        SpannableString str1 = new SpannableString("توضیحات ");
+        SpannableString str1 = new SpannableString("Description of ");
         Typeface font = Typeface.createFromAsset(getAssets(), "font/bold.TTF");
         str1.setSpan (font, 0, str1.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
         builder.append(str1);

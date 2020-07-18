@@ -83,7 +83,7 @@ public class BlogAdapter extends RecyclerView.Adapter<BlogAdapter.ViewHolder> {
         void bindItem(final Blog item) {
             Picasso.load(item.getImage(), image, R.drawable.template_blog);
             title.setText(item.getTitle());
-            date.setText(PostTimeCal.Calculator(new Date().getTime() / 1000 - item.getDate()) + " پیش");
+            date.setText(PostTimeCal.Calculator(new Date().getTime() / 1000 - item.getDate()) +" "+ context.getString(R.string.ago));
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
