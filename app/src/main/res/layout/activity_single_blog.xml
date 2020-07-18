@@ -83,6 +83,7 @@
                     android:fontFamily="@font/medium"
                     android:gravity="center"
                     android:text="3 روز پیش"
+                    android:layout_marginLeft="8dp"
                     android:textColor="@color/BlogItemCreated"
                     android:textSize="16sp" />
 
@@ -114,6 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
+                android:layout_marginBottom="16dp"
                 android:paddingRight="8dp"/>
         </LinearLayout>
 

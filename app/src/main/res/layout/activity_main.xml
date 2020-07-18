@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="83dp"
+        android:layout_height="70dp"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +23,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:realtimeBlurRadius="30dp"
-            app:realtimeOverlayColor="#BAFFFFFF" />
+            app:realtimeOverlayColor="#D4FFFFFF" />
+
         <LinearLayout
             android:id="@+id/MainBottomNavBarView"
             android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:paddingTop="8dp"
+            android:layout_height="70dp"
             android:gravity="top|center"
             android:orientation="horizontal"
+            android:paddingTop="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">

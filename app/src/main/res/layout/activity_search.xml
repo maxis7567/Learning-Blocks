@@ -9,7 +9,7 @@
     tools:context=".search.SearchActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/SearchView"
+        android:id="@+id/constraintLayout3"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="#FFFFFF"
@@ -65,14 +65,14 @@
         android:id="@+id/SearchTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/bold"
         android:text="ذخیره شده ها"
         android:textColor="@color/textBlack"
         android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SearchBackBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/SearchBackBtn" />
 
     <ImageView
         android:id="@+id/SearchBackBtn"
@@ -87,7 +87,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/SearchView"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SearchTitle" />

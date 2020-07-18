@@ -18,8 +18,7 @@
         android:src="@drawable/template_blog"
         app:riv_corner_radius_top_left="18dp"
         app:riv_corner_radius_top_right="18dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="8dp" />
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

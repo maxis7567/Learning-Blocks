@@ -118,21 +118,21 @@
         app:layout_constraintEnd_toEndOf="@+id/RegisterNameEditText"
         app:layout_constraintStart_toStartOf="@+id/RegisterNameEditText"
         app:layout_constraintTop_toTopOf="@+id/RegisterNameEditText">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/name"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:tint="@color/colorPrimaryDark"
             app:srcCompat="@drawable/ic_user" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:fontFamily="@font/regular"
-            android:text="@string/name"
-            android:textColor="@color/textBlack"
-            android:textSize="18sp" />
+
 
     </LinearLayout>
 
@@ -164,21 +164,21 @@
         app:layout_constraintEnd_toEndOf="@+id/RegisterlNameEditText"
         app:layout_constraintStart_toStartOf="@+id/RegisterlNameEditText"
         app:layout_constraintTop_toTopOf="@+id/RegisterlNameEditText">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/LastName"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:tint="@color/colorAccent"
             app:srcCompat="@drawable/ic_user" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:fontFamily="@font/regular"
-            android:text="@string/LastName"
-            android:textColor="@color/textBlack"
-            android:textSize="18sp" />
+
 
     </LinearLayout>
 

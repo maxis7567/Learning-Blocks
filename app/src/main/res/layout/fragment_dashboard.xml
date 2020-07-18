@@ -90,7 +90,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/DashboordUserBtn"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginTop="30dp"
@@ -106,10 +106,10 @@
                         android:adjustViewBounds="true"
                         android:src="@drawable/ic_user"
                         android:tint="@color/colorAccent"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                        app:layout_constraintStart_toStartOf="@+id/imageView7"
-                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+                        app:layout_constraintBottom_toBottomOf="@+id/DashboordUserBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/DashboordUserBtn"
+                        app:layout_constraintStart_toStartOf="@+id/DashboordUserBtn"
+                        app:layout_constraintTop_toTopOf="@+id/DashboordUserBtn" />
 
                     <TextView
                         android:id="@+id/DahsboardUserName"
@@ -120,9 +120,9 @@
                         android:text="مهدی میرشاهی"
                         android:textColor="@color/textPrimary"
                         android:textSize="24sp"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                        app:layout_constraintStart_toStartOf="@+id/imageView7"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                        app:layout_constraintEnd_toEndOf="@+id/DashboordUserBtn"
+                        app:layout_constraintStart_toStartOf="@+id/DashboordUserBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/DashboordUserBtn" />
 
                     <TextView
                         android:id="@+id/textView7"
