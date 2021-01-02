@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nova.maxis7567.learningblocks">
-
+    <uses-permission android:name="com.android.vending.BILLING" />
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -28,7 +28,9 @@
         </activity>
         <activity android:name=".authentication.RegisterUserActivity" android:screenOrientation="portrait"/>
         <activity android:name=".authentication.ActiveActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".authentication.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".authentication.LoginActivity" android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name=".SplashActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +39,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".blog.SingleBlogActivity" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>

@@ -14,9 +14,9 @@ public class Package implements Serializable {
      @SerializedName("color")
     private String color;
      @SerializedName("price")
-    private int price;
+    private float price;
      @SerializedName("salePrice")
-    private int salePrice;
+    private float salePrice;
      @SerializedName("day")
     private String time;
 
@@ -52,21 +52,6 @@ public class Package implements Serializable {
         this.color = color;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getSalePrice() {
-        return salePrice;
-    }
-
-    public void setSalePrice(int salePrice) {
-        this.salePrice = salePrice;
-    }
 
     public String getTime() {
         return time;
@@ -74,6 +59,22 @@ public class Package implements Serializable {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public float getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(float salePrice) {
+        this.salePrice = salePrice;
     }
 
 

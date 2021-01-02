@@ -2,6 +2,7 @@ package com.nova.maxis7567.learningblocks.authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.text.style.ForegroundColorSpan;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -48,6 +50,11 @@ public class ActiveActivity extends AppCompatActivity {
         code2=findViewById(R.id.ActvieCode2);
         code3=findViewById(R.id.ActvieCode3);
         code4=findViewById(R.id.ActvieCode4);
+        code1.requestFocus();
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        try {
+            imm.showSoftInput(code1, InputMethodManager.SHOW_IMPLICIT);
+        }catch (Exception ignore){}
         errorText=findViewById(R.id.ActiveErrorTExt);
         loading=new LoadingDialog(this,viewGroup);
         SpannableStringBuilder builder = new SpannableStringBuilder();

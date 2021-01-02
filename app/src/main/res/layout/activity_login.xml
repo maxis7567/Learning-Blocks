@@ -18,18 +18,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_login_logo" />
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginEnd="75dp"
-        android:adjustViewBounds="true"
         android:translationY="-50dp"
+        android:textSize="26dp"
+        android:textColor="@color/textBlack"
+        android:fontFamily="@font/bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/tx_tavan_fa" />
+        android:text="Learning Blocks" />
 
     <TextView
         android:id="@+id/textView"
@@ -49,15 +51,15 @@
         android:id="@+id/LoginInput"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/shape_editbox_background"
-        android:gravity="center"
         android:digits="1234567890"
+        android:gravity="center"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LoginCountryCode"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -125,4 +127,18 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/LoginCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/shape_editbox_background"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="+98"
+        android:textColor="@color/textBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/LoginInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

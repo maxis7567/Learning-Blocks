@@ -102,7 +102,7 @@ public class SubCatActivity extends AppCompatActivity {
         SpannableString str1 = new SpannableString("Description of ");
         Typeface font = Typeface.createFromAsset(getAssets(), "font/bold.TTF");
         str1.setSpan (font, 0, str1.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
-        builder.append(str1);
+//        builder.append(str1);
         SpannableString str2 = new SpannableString(category.getName());
         str2.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.textGreen)), 0, str2.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         str2.setSpan (font, 0, str2.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);

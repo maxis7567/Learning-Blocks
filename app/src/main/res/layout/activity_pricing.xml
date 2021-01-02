@@ -90,9 +90,21 @@
                 android:id="@+id/PricingIndicator"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginBottom="160dp"
                 app:ci_drawable="@drawable/shape_selected_indicator"
                 app:ci_drawable_unselected="@drawable/shape_unselected_indicator" />
+            <EditText
+                android:id="@+id/PricDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:hint="Enter your discount code"
+                android:background="@drawable/shape_editbox_background"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginBottom="160dp"
+                />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

@@ -251,7 +251,7 @@ public class DashboardFragment extends Fragment {
         }else {
             SpannableStringBuilder builder = new SpannableStringBuilder();
             SpannableString str1 = new SpannableString("Upgrade To ");
-            Typeface font = Typeface.createFromAsset(context.getAssets(), "font/bold.TTF");
+            Typeface font = Typeface.createFromAsset(context.getAssets(), "font/bold.ttf");
             str1.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.textBlack)), 0, str1.length(), 0);
             str1.setSpan (font, 0, str1.length(),Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
             builder.append(str1);
@@ -272,8 +272,10 @@ public class DashboardFragment extends Fragment {
             recentActTx.setVisibility(View.GONE);
         }else {
             RecentActivityAdapter recentActivityAdapter=new RecentActivityAdapter(context,DataBaseRecentActivities.Get(context));
-            recentActRec.setLayoutManager(new LinearLayoutManager(context));
             recentActRec.setAdapter(recentActivityAdapter);
+            LinearLayoutManager l=new LinearLayoutManager(context,RecyclerView.VERTICAL,true);
+            recentActRec.setLayoutManager(l);
+
         }
         BlogAdapter blogAdapter=new BlogAdapter(context,data.getBlogList(),null);
         blogRec.setLayoutManager(new LinearLayoutManager(context));

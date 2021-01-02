@@ -6,8 +6,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.gson.JsonObject;
@@ -19,9 +21,12 @@ import com.maxis7567.msvolley.Response;
 import com.maxis7567.msvolley.ResponseError;
 import com.nova.maxis7567.learningblocks.R;
 import com.nova.maxis7567.learningblocks.models.Package;
+import com.nova.maxis7567.learningblocks.pricing.PriceCardsPagerAdapter;
 import com.nova.maxis7567.learningblocks.services.Api;
 import com.nova.maxis7567.learningblocks.tools.dialog.DialogMessage;
 import com.nova.maxis7567.learningblocks.tools.dialog.LoadingDialog;
+import com.onurkaganaldemir.ktoastlib.KToast;
+
 
 import java.util.List;
 
@@ -35,6 +40,7 @@ public class PricingActivity extends AppCompatActivity {
     private LoadingDialog loading;
     private List<Package> data;
     private ViewGroup viewGroup;
+    private EditText discount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +48,7 @@ public class PricingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pricing);
         viewGroup=findViewById(R.id.PricingView);
         viewPager = findViewById(R.id.PricingViewPager);
+        discount=findViewById(R.id.PricDiscount);
         circleIndicator = findViewById(R.id.PricingIndicator);
         totalName = findViewById(R.id.PricingTotalName);
         totalPrice = findViewById(R.id.PricingTotalPrice);
@@ -55,6 +62,10 @@ public class PricingActivity extends AppCompatActivity {
         Api.packages(this, new Response<List<Package>>() {
             @Override
             public void respond(final List<Package> respond) {
+                if (respond.size()==0){
+                    KToast.errorToast(PricingActivity.this,"Package list is empty call administrator", Gravity.BOTTOM,KToast.LENGTH_SHORT,111);
+                    finish();
+                }
                 data=respond;
                 setUpView();
 
@@ -227,7 +238,7 @@ public class PricingActivity extends AppCompatActivity {
                 });
 
             }
-        }, data.get(viewPager.getCurrentItem()).getId());
+        }, data.get(viewPager.getCurrentItem()).getId(),discount.getText().toString());
     }
 
     private void setUpView() {
@@ -264,7 +275,7 @@ public class PricingActivity extends AppCompatActivity {
             }
         });
         viewPager.setCurrentItem(1);
-
+        setTotals(data.get(0).getSalePrice(), data.get(0).getTitle());
         loading.dismiss();
         findViewById(R.id.PricingBuyBtn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -274,8 +285,8 @@ public class PricingActivity extends AppCompatActivity {
         });
     }
 
-    public void setTotals(int price, String name) {
-        totalPrice.setText(PriceConvertor.Convert(price)+" " + getString(R.string.MoneyUnit));
+    public void setTotals(float price, String name) {
+        totalPrice.setText(PriceConvertor.Convert(price) + " USD");
         totalName.setText(name);
     }
 }

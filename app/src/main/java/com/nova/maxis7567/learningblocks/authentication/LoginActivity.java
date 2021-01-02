@@ -3,20 +3,32 @@ package com.nova.maxis7567.learningblocks.authentication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ObjectAnimator;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.telephony.TelephonyManager;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
+import com.heetch.countrypicker.Country;
+import com.heetch.countrypicker.CountryPickerCallbacks;
+import com.heetch.countrypicker.CountryPickerDialog;
+import com.heetch.countrypicker.Utils;
 import com.hinext.maxis7567.mstools.DisplayMetricsUtils;
 import com.hinext.maxis7567.mstools.Validation;
 import com.nova.maxis7567.learningblocks.R;
 import com.nova.maxis7567.learningblocks.tools.DataBaseRecentActivities;
 
+import java.util.List;
+
 public class LoginActivity extends AppCompatActivity {
+    private Country country;
+    private List<Country> countries;
+    private TextView countryCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +36,19 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         DataBaseRecentActivities.Reset(this);
         EditText editText=findViewById(R.id.LoginInput);
+        countryCode=findViewById(R.id.LoginCountryCode);
+        countries = Utils.parseCountries(Utils.getCountriesJSON(this));
+        String locale = getResources().getConfiguration().locale.getCountry();
+        for (int i = 0; i < countries.size(); i++) {
+            if (locale.equals(countries.get(i).getIsoCode())){
+                country=countries.get(i);
+                break;
+            }
+        }
+        if (country==null){
+            country=countries.get(0);
+        }
+
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -46,9 +71,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String tmp= ((EditText) findViewById(R.id.LoginInput)).getText().toString();
-                if (Validation.checkMobileNumber(tmp)){
+                if (Validation.checkMobileNumber("+"+country.getDialingCode()+tmp)){
                     Intent intent=new Intent(LoginActivity.this,ActiveActivity.class);
-                    intent.putExtra("phone",tmp);
+                    intent.putExtra("phone","00"+country.getDialingCode()+tmp);
                     startActivity(intent);
                 }else {
                     ((TextView) findViewById(R.id.LoginErrorText)).setText(R.string.invalidNumber);
@@ -56,7 +81,23 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
-
+        CountryPickerDialog countryPicker =
+                new CountryPickerDialog(this, new CountryPickerCallbacks() {
+                    @Override
+                    public void onCountrySelected(Country country, int flagResId) {
+                        LoginActivity.this.country=country;
+                        setCountryCode();
+                    }
+                });
+        setCountryCode();
+        countryCode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countryPicker.show();
+            }
+        });
+    }
+    private void setCountryCode(){
+        countryCode.setText("+"+country.getDialingCode());
     }
 }

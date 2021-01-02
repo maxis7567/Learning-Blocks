@@ -3,12 +3,16 @@ package com.nova.maxis7567.learningblocks.tools;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.nova.maxis7567.learningblocks.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
 
 public class Picasso {
     public static void load(final String url, final ImageView imageView, final int placeHolder){
+        if (url==null){
+            com.squareup.picasso.Picasso.get().load(R.drawable.template_image1);
+        }else
         com.squareup.picasso.Picasso.get()
                 .load(url)
                 .networkPolicy(NetworkPolicy.OFFLINE)

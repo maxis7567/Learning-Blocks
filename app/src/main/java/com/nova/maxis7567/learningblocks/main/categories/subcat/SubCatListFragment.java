@@ -3,6 +3,7 @@ package com.nova.maxis7567.learningblocks.main.categories.subcat;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -58,7 +59,8 @@ public class SubCatListFragment extends Fragment {
         }else {
             recyclerView.setAdapter(new SubCatAdapter(getContext(),list));
         }
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setItemViewCacheSize(1000);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),1));
         return view;
     }
 }

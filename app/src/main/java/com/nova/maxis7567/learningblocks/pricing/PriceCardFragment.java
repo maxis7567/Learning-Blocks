@@ -70,12 +70,13 @@ public class PriceCardFragment extends Fragment {
             price.setVisibility(View.INVISIBLE);
 
         }else {
-            discount.setText((((p.getPrice() - p.getSalePrice()) * 100) / p.getPrice())+" %");
+            int temp= (int) (((p.getPrice() - p.getSalePrice()) * 100) / p.getPrice());
+            discount.setText(temp+" %");
             price.setText(PriceConvertor.Convert(p.getPrice()));
             price.setPaintFlags(price.getPaintFlags() |  Paint.STRIKE_THRU_TEXT_FLAG);
         }
         salePrice.setText(PriceConvertor.Convert(p.getSalePrice()));
-        date.setText("تومان / "+p.getTime()+" روزه");
+        date.setText("USD / "+p.getTime()+" Day");
         PriceCardLinearLayout root = (PriceCardLinearLayout) view.findViewById(R.id.item_root);
         float scale = this.getArguments().getFloat("scale");
         root.setScaleBoth(scale);

@@ -29,8 +29,8 @@ import java.util.Map;
 import static com.maxis7567.msvolley.RequestQueueContainer.add;
 
 public class Api {
-    public static final String BASE_URL = "https://tavanyaar.ir/wp-json/api/v1/";
-    public static final String DOMAIN = "https://tavanyaar.ir/";
+    public static final String BASE_URL = "https://learningblocksapp.com/wp-json/api/v1/";
+    public static final String DOMAIN = "https://learningblocksapp.com/";
     static Gson gson = new Gson();
     private static RetryPolicy retryPolicy=new RetryPolicy().setMaxRetries(2).setTimeoutMs(5000);
 
@@ -282,12 +282,15 @@ public class Api {
         );
     }
 
-    public static void buy(Context context, Response<JsonObject> respond, ResponseError<JsonObject> responseError, LocalError localError, int id) {
+    public static void buy(Context context, Response<JsonObject> respond, ResponseError<JsonObject> responseError, LocalError localError, int id,String discount) {
         Map<String, String> header = new ArrayMap<>();
         header.put("Accept", "application/json");
         header.put("Content-Type", "application/json");
         JsonObject body = new JsonObject();
         body.addProperty("package_id", id);
+        if (discount.length()>0){
+            body.addProperty("discount_code",discount);
+        }
         header.put("Authorization", "Bearer " + DataBaseTokenID.GetTokenID(context));
         JsonRequest<JsonObject, JsonObject> a = new JsonRequest<>(context,
                 JsonRequest.POST, new RetryPolicy().setMaxRetries(0).setTimeoutMs(10000),
