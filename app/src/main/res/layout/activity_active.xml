@@ -32,7 +32,7 @@
         android:gravity="center"
         tools:text="کد فعال سازی
 به شماره 0912456789 ارسال شد"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -109,7 +109,7 @@
         android:gravity="center"
         android:text="@string/next"
         android:textColor="@color/textWhite"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"

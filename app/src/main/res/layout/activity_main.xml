@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
                     android:text="@string/Dashboard"
-                    android:textSize="12dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
                     android:text="Category"
-                    android:textSize="12dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
                     android:text="Bookmark"
-                    android:textSize="12dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/regular"
                     android:text="Blog"
-                    android:textSize="12dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

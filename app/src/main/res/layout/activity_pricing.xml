@@ -68,7 +68,7 @@
                 android:gravity="center"
                 android:text="Pick your Premium"
                 android:textColor="@color/textBlack"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -79,7 +79,7 @@
                 android:gravity="center"
                 android:text="Join our family"
                 android:textColor="@color/textGrey"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/PricingViewPager"
@@ -101,7 +101,7 @@
                 android:hint="Enter your discount code"
                 android:background="@drawable/shape_editbox_background"
                 android:gravity="center"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:layout_marginBottom="160dp"
                 />
 
@@ -136,7 +136,7 @@
             android:fontFamily="@font/bold"
             android:text="Buy &amp; Activation"
             android:textColor="@color/textWhite"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:translationY="-2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView24"
@@ -150,7 +150,7 @@
             android:fontFamily="@font/bold"
             android:text="TextView"
             android:textColor="@color/textWhite"
-            android:textSize="25sp"
+            android:textSize="23sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.nova.maxis7567.learningblocks.pricing.PriceCardLinearLayout
+    <com.nova.maxis7567.learningblocks1.pricing.PriceCardLinearLayout
         android:id="@+id/item_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -75,7 +75,7 @@
                 android:fontFamily="@font/bold"
                 android:text="TextView"
                 android:textColor="@color/colorAccent2"
-                android:textSize="40sp"
+                android:textSize="38sp"
                 app:layout_constraintBottom_toBottomOf="@+id/PricingCardTime"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -88,7 +88,7 @@
                 android:fontFamily="@font/bold"
                 android:text="TextView"
                 android:textColor="@color/textGrey"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="@+id/PricingCardTime"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -112,5 +112,5 @@
 
 
 
-    </com.nova.maxis7567.learningblocks.pricing.PriceCardLinearLayout>
+    </com.nova.maxis7567.learningblocks1.pricing.PriceCardLinearLayout>
 </LinearLayout>

@@ -24,7 +24,7 @@
             android:fontFamily="@font/medium"
             android:text="TextView"
             android:textColor="@color/textBlack"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/ItemSearchDesc"
@@ -35,7 +35,7 @@
             android:fontFamily="@font/medium"
             android:text="TextView"
             android:textColor="@color/colorAccent"
-            android:textSize="12sp" />
+            android:textSize="10sp" />
     </LinearLayout>
 
     <ImageView

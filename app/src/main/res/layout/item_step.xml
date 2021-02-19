@@ -30,7 +30,7 @@
         android:gravity="center"
         android:text="1"
         android:textColor="@color/textWhite"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,28 +39,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/medium"
-        android:gravity="right"
         android:textColor="@color/colorAccent"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintTop_toTopOf="@+id/ItemStepNumber"
         app:layout_constraintBottom_toBottomOf="@+id/ItemStepNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ItemStepNumber"
-         />
+        app:layout_constraintTop_toTopOf="@+id/ItemStepNumber" />
 
     <TextView
         android:id="@+id/ItemStepContent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/light"
-        android:gravity="right"
         android:text="TextView"
         android:textColor="@color/textGrey"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/ItemStepTitle"
         app:layout_constraintStart_toStartOf="@+id/ItemStepTitle"
         app:layout_constraintTop_toBottomOf="@+id/ItemStepTitle" />
@@ -135,7 +132,7 @@
             android:fontFamily="@font/regular"
             android:text="Download the file"
             android:textColor="@color/textBlack"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView5"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="@+id/imageView5" />

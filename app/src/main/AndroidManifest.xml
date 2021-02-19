@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nova.maxis7567.learningblocks">
+    package="com.nova.maxis7567.learningblocks1">
     <uses-permission android:name="com.android.vending.BILLING" />
     <application
         android:allowBackup="false"

@@ -157,7 +157,9 @@ public class JsonRequest<T, E> extends Request<T> {
                 String stringResponse = new String(volleyError.networkResponse.data, StandardCharsets.UTF_8);
                 JsonObject jsonObject=new Gson().fromJson(stringResponse, JsonObject.class);
                 if (jsonObject.get("message").getAsString().equals("not package is active")){
-                    localError.error("not a premiums user");
+                    E respond = gson.fromJson(stringResponse, errType);
+                    RespondError<E> error = new RespondError<>(volleyError.getMessage(), volleyError.networkResponse.statusCode, respond);
+                    responseError.error(error);
                 }else {
                     DataBaseTokenID.ResetTokenID(context);
 

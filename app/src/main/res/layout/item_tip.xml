@@ -16,7 +16,7 @@
         android:background="@drawable/shadow_1_1"
         android:padding="16dp"
         android:src="@drawable/ic_crown"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:riv_corner_radius="8dp" />
 
@@ -24,28 +24,28 @@
         android:id="@+id/ItemTipTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/bold"
         android:text="TextView"
         android:textColor="@color/textBlack"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/ItemTipImage"
-        app:layout_constraintEnd_toStartOf="@+id/ItemTipImage"
+        app:layout_constraintStart_toEndOf="@+id/ItemTipImage"
         app:layout_constraintTop_toTopOf="@+id/ItemTipImage" />
 
     <TextView
         android:id="@+id/ItemTipDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="TextView"
         android:textColor="@color/textGrey"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ItemTipImage"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ItemTipImage"
         app:layout_constraintTop_toTopOf="@+id/ItemTipImage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

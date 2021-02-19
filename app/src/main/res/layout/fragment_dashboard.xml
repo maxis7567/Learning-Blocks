@@ -109,7 +109,7 @@
                         android:fontFamily="@font/bold"
                         android:text="مهدی میرشاهی"
                         android:textColor="@color/textPrimary"
-                        android:textSize="24sp"
+                        android:textSize="22sp"
                         app:layout_constraintEnd_toEndOf="@+id/DashboordUserBtn"
                         app:layout_constraintStart_toStartOf="@+id/DashboordUserBtn"
                         app:layout_constraintTop_toBottomOf="@+id/DashboordUserBtn" />
@@ -123,7 +123,7 @@
                         android:fontFamily="@font/medium"
                         android:text="@string/Welcome"
                         android:textColor="@color/textBlack"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                         app:layout_constraintEnd_toEndOf="@+id/DahsboardUserName"
                         app:layout_constraintStart_toStartOf="@+id/DahsboardUserName"
@@ -175,7 +175,7 @@
                                 android:fontFamily="@font/bold"
                                 android:text="@string/UpgradeToPremium"
                                 android:textColor="@color/colorPrimaryDark"
-                                android:textSize="18dp" />
+                                android:textSize="16dp" />
 
                             <TextView
                                 android:id="@+id/DahsboardPremiumDesc"
@@ -183,7 +183,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/regular"
                                 android:text="@string/ActivePremium"
-                                android:textSize="16dp" />
+                                android:textSize="14dp" />
                         </LinearLayout>
 
                         <ImageView
@@ -234,7 +234,7 @@
                                 android:fontFamily="@font/medium"
                                 android:text="@string/SearchActivities"
                                 android:textColor="@color/textBlack"
-                                android:textSize="18dp" />
+                                android:textSize="16dp" />
 
 
 
@@ -253,7 +253,7 @@
                         android:fontFamily="@font/bold"
                         android:text="@string/RecentActivities"
                         android:textColor="@color/textBlack"
-                        android:textSize="18sp" />
+                        android:textSize="16sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/DashboardRecentActRec"
@@ -270,7 +270,7 @@
                         android:text="@string/NewInBlog"
                         android:layout_gravity="left"
                         android:textColor="@color/textBlack"
-                        android:textSize="18sp" />
+                        android:textSize="16sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/DashboardBlogRec"
@@ -292,7 +292,7 @@
                             android:gravity="center"
                             android:text="@string/MoreItem"
                             android:textColor="@color/textPrimary"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
                     </androidx.cardview.widget.CardView>
 
                     <View
