@@ -8,8 +8,8 @@ android {
         applicationId "com.nova.maxis7567.learningblocks1"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 6
-        versionName "1.0.0"
+        versionCode 7
+        versionName "1.0.1"
         renderscriptTargetApi 29
         renderscriptSupportModeEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -56,4 +56,6 @@ dependencies {
     implementation 'com.github.mmin18:realtimeblurview:1.2.1'
     implementation 'me.relex:circleindicator:2.1.4'
     implementation 'com.github.heetch:Android-country-picker:1.0.6'
+    implementation "com.android.billingclient:billing:3.0.0"
+
 }

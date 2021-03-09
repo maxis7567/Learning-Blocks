@@ -48,7 +48,7 @@ public class SplashActivity extends AppCompatActivity {
                             DialogMessage dialogMessage= new DialogMessage(SplashActivity.this, viewGroup, false, new DialogMessage.DialogMessageInterface() {
                                 @Override
                                 public void OnConfirmed() {
-                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(Api.DOMAIN));
+                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.nova.maxis7567.learningblocks1"));
                                     startActivity(intent);
                                     finish();
                                 }
@@ -73,7 +73,7 @@ public class SplashActivity extends AppCompatActivity {
                             DialogMessage dialogMessage1= new DialogMessage(SplashActivity.this, viewGroup, true, new DialogMessage.DialogMessageInterface() {
                                 @Override
                                 public void OnConfirmed() {
-                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(Api.DOMAIN));
+                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.nova.maxis7567.learningblocks1"));
                                     startActivity(intent);
                                     finish();
                                 }
